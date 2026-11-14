@@ -1,0 +1,30 @@
+﻿# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# MLflow generated files
+mlruns/
+.mlflow/
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+
+# Downloaded and generated data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/errors/*
+!data/errors/.gitkeep
+data/features/*
+!data/features/.gitkeep
+
+# Generated model binaries (recreate using run_pipeline.py)
+models/*.joblib
+!models/.gitkeep
+
+# Temporary files
+*.tmp
+*.log.tmp

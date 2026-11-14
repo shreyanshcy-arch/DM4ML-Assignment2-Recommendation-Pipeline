@@ -1,0 +1,9 @@
+feature,entity,definition,notes
+user_average_rating,User,Mean rating given by user,Training interactions only
+user_activity_count,User,Number of training interactions,Training interactions only
+user_last_interaction,User,Latest interaction timestamp,Unix timestamp
+item_popularity,Item,Number of training ratings,Training interactions only
+item_average_rating,Item,Mean rating received by item,Training interactions only
+item_rating_std,Item,Standard deviation of item ratings,May be null for one rating
+rating,Interaction,Explicit user rating,0.5 to 5.0
+timestamp,Interaction,Interaction time,Unix timestamp

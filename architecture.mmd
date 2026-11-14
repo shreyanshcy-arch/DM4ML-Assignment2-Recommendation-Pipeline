@@ -1,0 +1,17 @@
+flowchart TD
+    A[MovieLens CSV download] --> B[Data ingestion]
+    B --> C[Data validation]
+    C -->|Valid rows| D[Preparation and chronological split]
+    C -->|Invalid rows| E[Error dataset and validation report]
+    D --> F[Data transformation]
+    F --> G[Feature management]
+    G --> H[Popularity model]
+    G --> I[Item-item collaborative filtering]
+    H --> J[Ranking evaluation]
+    I --> J
+    H --> L[MLflow tracking]
+    I --> L
+    J --> L
+    J --> K[Results and model artifacts]
+    K --> M[Reports]
+    O[Orchestration: run_pipeline.py] --> B

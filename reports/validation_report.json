@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "input_rows": 100836,
+  "valid_rows": 100836,
+  "invalid_rows": 0,
+  "duplicate_user_movie_rows": 0,
+  "missing_or_invalid_required_values": 0,
+  "rating_range": [
+    0.5,
+    5.0
+  ],
+  "valid_user_count": 610,
+  "valid_movie_count": 9724
+}

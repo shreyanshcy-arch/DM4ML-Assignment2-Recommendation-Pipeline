@@ -1,0 +1,15 @@
+[1/7] Data ingestion
+Loaded 610 users, 9,742 movies, 100,836 ratings
+[2/7] Data validation
+Validation: PASS | valid ratings: 100,836
+[3/7] Data preparation and chronological split
+Train: 80,668 | Test: 20,168
+[4/7] Data transformation
+[5/7] Feature management
+[6/7] Model training
+Trained popularity and item-item collaborative filtering models
+[7/7] Model evaluation and tracking
+Model comparison saved to reports/model_comparison.csv
+MLflow run completed: Popularity_Recommender
+MLflow run completed: Item_Item_CF_Recommender
+MLflow tracking completed for both recommendation models

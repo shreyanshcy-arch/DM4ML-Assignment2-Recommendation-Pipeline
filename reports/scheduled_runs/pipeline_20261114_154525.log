@@ -1,0 +1,11 @@
+﻿Pipeline started: 11/14/2026 15:45:25
+STATUS: FAILED
+python.exe : 2026/11/14 15:45:40 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), 
+so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+At D:\2025AG05905_DM4ML_Assignment2\dags\run_scheduled_pipeline.ps1:26 char:15
++     $Output = & $PythonExe $PipelineScript 2>&1
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026/11/14 15:4...git executable.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

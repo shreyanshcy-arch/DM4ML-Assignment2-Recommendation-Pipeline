@@ -1,0 +1,79 @@
+﻿Pipeline started: 11/14/2026 16:03:14
+========== STANDARD OUTPUT ==========
+[1/7] Data ingestion
+Loaded 610 users, 9,742 movies, 100,836 ratings
+[2/7] Data validation
+Validation: PASS | valid ratings: 100,836
+[3/7] Data preparation and chronological split
+Train: 80,668 | Test: 20,168
+[4/7] Data transformation
+[5/7] Feature management
+[6/7] Model training
+Trained popularity and item-item collaborative filtering models
+[7/7] Model evaluation and tracking
+Model comparison saved to reports/model_comparison.csv
+MLflow run completed: Popularity_Recommender
+MLflow run completed: Item_Item_CF_Recommender
+MLflow tracking completed for both recommendation models
+
+MODEL COMPARISON
+       Model  Precision@5  Recall@5   NDCG@5  Coverage  Diversity     RMSE     MAE
+  Popularity     0.360345  0.041921 0.383973  0.003901   0.821589 1.045641 0.80973
+Item-item CF     0.370690  0.044230 0.372148  0.008520   0.788599 1.045641 0.80973
+
+Pipeline completed. See reports/ and models/.
+========== STANDARD ERROR / WARNINGS ==========
+2026/11/14 16:03:34 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+2026/11/14 16:03:34 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git branch is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+2026/11/14 16:03:34 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git repository URL is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+STATUS: SUCCESS
+Exit code: 0
+Pipeline completed: 11/14/2026 16:03:40

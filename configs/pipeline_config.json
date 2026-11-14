@@ -1,0 +1,7 @@
+{
+  "dataset": "MovieLens ml-latest-small",
+  "test_fraction": 0.2,
+  "relevance_rating_threshold": 4.0,
+  "k": 5,
+  "mlflow_experiment": "DM4ML_Assignment2_Recommendation"
+}
