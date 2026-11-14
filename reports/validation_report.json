@@ -1,14 +1,37 @@
 {
   "status": "PASS",
-  "input_rows": 100836,
-  "valid_rows": 100836,
-  "invalid_rows": 0,
-  "duplicate_user_movie_rows": 0,
-  "missing_or_invalid_required_values": 0,
-  "rating_range": [
-    0.5,
-    5.0
-  ],
-  "valid_user_count": 610,
-  "valid_movie_count": 9724
+  "users": {
+    "input_rows": 610,
+    "valid_rows": 610,
+    "invalid_rows": 0,
+    "duplicate_ids": 0
+  },
+  "movies": {
+    "input_rows": 9742,
+    "valid_rows": 9742,
+    "invalid_rows": 0,
+    "duplicate_ids": 0
+  },
+  "ratings": {
+    "input_rows": 100836,
+    "valid_rows": 100836,
+    "invalid_rows": 0,
+    "duplicate_user_movie_rows": 0,
+    "missing_or_invalid_required_values": 0,
+    "rating_range": [
+      0.5,
+      5.0
+    ],
+    "valid_user_count": 610,
+    "valid_movie_count": 9724
+  },
+  "referential_integrity": {
+    "unknown_users": 0,
+    "unknown_movies": 0
+  },
+  "error_files": {
+    "invalid_users": "data\\errors\\invalid_users.csv",
+    "invalid_movies": "data\\errors\\invalid_movies.csv",
+    "invalid_ratings": "data\\errors\\invalid_ratings.csv"
+  }
 }
